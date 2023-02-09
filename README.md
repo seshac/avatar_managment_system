@@ -4,11 +4,55 @@
 
 ### Step 2: Local Setup
 
-    1. ```Composer install```
-    2. Update the database details in .env
-    3. Run ```php artisan migrate```
-    4. Run ``php artisan db:seed``` to setup some sample data.
+A. Run ```Composer install```
 
-### For Endpoints please follow the below postman collection
+B. Update the database details in .env
 
-[Postman collection](./api.postman_collection.json)
+C. Run ```php artisan migrate```
+
+D. Run ```php artisan db:seed``` to setup some sample data.
+
+### Step 3: For Endpoints please follow the below postman collection
+
+ [Postman collection](./api.postman_collection.json)
+
+### Step 4:
+
+For temporary demo purposes, I have hosted the following server.
+
+http://3.7.66.99
+
+More information about the endpoints.
+
+1. To Get the list of items by categories
+
+    Get request: http://3.7.66.99/api/items
+    
+2. Buy a new item
+
+     Put request: ```http://3.7.66.99/user/{userId}/item/{ItemId}/buy```
+     
+      Example : http://3.7.66.99/user/1/item/1/buy
+      
+3. Activate the current list of items
+ 
+    Post request: ```http://3.7.66.99/user/{userId}/items/activate```
+    
+    Example: http://3.7.66.99/user/1/items/activate
+    
+    Input json (Items)
+    
+    ```json
+        {
+
+            "items": [1,3,4] //item Id's
+
+        }
+     ```
+
+4. Get the current Avatar list
+ 
+      Get Request : ```http://3.7.66.99//user/{userId}/items```
+
+      Example : http://3.7.66.99/user/1/items
+    

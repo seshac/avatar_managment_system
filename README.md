@@ -30,15 +30,15 @@ More information about the endpoints.
     
 2. Buy a new item
 
-     Put request: ```http://3.7.66.99/user/{userId}/item/{ItemId}/buy```
+     Put request: ```http://3.7.66.99/api/user/{userId}/item/{ItemId}/buy```
      
       Example : http://3.7.66.99/user/1/item/1/buy
       
 3. Activate the current list of items
  
-    Post request: ```http://3.7.66.99/user/{userId}/items/activate```
+    Post request: ```http://3.7.66.99/api/user/{userId}/items/activate```
     
-    Example: http://3.7.66.99/user/1/items/activate
+    Example: http://3.7.66.99/api/user/1/items/activate
     
     Input json (Items)
     
@@ -52,7 +52,7 @@ More information about the endpoints.
 
 4. Get the current Avatar list
  
-      Get Request : ```http://3.7.66.99//user/{userId}/items```
+      Get Request : ```http://3.7.66.99/api/user/{userId}/items```
 
-      Example : http://3.7.66.99/user/1/items
+      Example : http://3.7.66.99/api/user/1/items
     

@@ -28,13 +28,13 @@ More information about the endpoints.
 
     Get request: http://3.7.66.99/api/items
     
-2. Buy a new item
+2. Buy a new item for the user
 
      Put request: ```http://3.7.66.99/api/user/{userId}/item/{ItemId}/buy```
      
       Example : http://3.7.66.99/user/1/item/1/buy
       
-3. Activate the current list of items
+3. Activate the current list of items for the user
  
     Post request: ```http://3.7.66.99/api/user/{userId}/items/activate```
     
@@ -50,7 +50,7 @@ More information about the endpoints.
         }
      ```
 
-4. Get the current Avatar list
+4. Get the current Avatar list for the user
  
       Get Request : ```http://3.7.66.99/api/user/{userId}/items```
 
